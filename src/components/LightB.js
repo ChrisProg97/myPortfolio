@@ -3,9 +3,9 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 const images = [
-  '../../images/HomePage.png',
-  '../../images/HostelList.png',
-  '../../images/Form2.png'
+  'images/HomePage.png',
+  'images/HostelList.png',
+  'images/Form2.png'
 ];
 
 export default class LightB extends Component {
