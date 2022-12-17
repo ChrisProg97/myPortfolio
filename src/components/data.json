@@ -1,0 +1,23 @@
+[
+	{
+		"id":  1,
+		"image":  "../../images/HomePage.PNG",
+		"title":  "Home Page",
+		"description":
+		"The current home page of the website"
+	},
+	{
+		"id":  2,
+		"image":  "../../images/HostelList.PNG",
+		"title":  "Hostel List",
+		"description":
+		"The Hostel List page"
+	},
+	{
+		"id":  3,
+		"image":  "../../images/Form2.PNG",
+		"title":  "Form Page",
+		"description":
+		"The Booking Form Page"
+	}
+]
