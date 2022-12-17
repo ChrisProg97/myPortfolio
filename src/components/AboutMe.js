@@ -8,6 +8,7 @@ const AboutMe = () => {
     <section name="about">
     <div  className="container">
      <h2 className="about-h3 about-me">About Me</h2>
+     
     <div className="container1"> 
       <div>
         
@@ -31,6 +32,7 @@ const AboutMe = () => {
             </div>
           </div>
       </div>
+      <div className="test">
       <div className="description">
         <p>
             HELLO, My name is Chrispin Jossam.  A third year student at the University of Malawi.
@@ -39,27 +41,28 @@ const AboutMe = () => {
             I also develop android apps.  
         </p>
 
-        <div className="expertise-other">
-          <div className="expertise">
-          <h4 className="about-h3">Expertise</h4>
-        <ul>
+      </div>
+
+      <div className="expertise-other">
+          <div className="expertis">
+          <h4 className="about-h3-1">Expertise</h4>
+        <ul className="list-div">
           <li>Java</li>
           <li>JavaScript</li>
           <li>HTML5</li>
           <li>CSS3</li>
         </ul>
           </div>
-        <div className="other">
-        <h4 className="about-h3">Frameworks</h4>
-        <ul>
+        <div className="othe">
+        <h4 className="about-h3-1">Frameworks</h4>
+        <ul className="list-div">
           <li>Springboot</li>
           <li>React Js</li>
           <li>Node.js</li>
         </ul>
         </div>
       </div>
-
-      </div>
+    </div>
     </div>
     </div>
     </section>
