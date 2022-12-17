@@ -40,6 +40,8 @@ const Contacts = () => {
             don't hastate to contact me using the below form.
         </p>
         </div>
+
+        
         <div className="form-map">
         <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -62,6 +64,8 @@ const Contacts = () => {
                 </ul>
             </form>
         </div>
+
+
         <div className="map-div">
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d12362.046184788138!2d35.32140351825894!3d-15.384044889965466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-15.391254499999999!2d35.335597799999995!4m5!1s0x18d9058aca8e047d%3A0xfa58bd232648ec4e!2sJ8FF%2B6J5%20Chikanda%2C%20chikanda%2C%20Zomba!3m2!1d-15.3769881!2d35.3240836!5e1!3m2!1sen!2smw!4v1669201942587!5m2!1sen!2smw"
