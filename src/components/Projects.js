@@ -1,7 +1,19 @@
 import React from "react";
-import LightB from "./LightB";
+import { LightBox } from 'react-lightbox-pack';
+import "react-lightbox-pack/dist/index.css";
+import data from './data.json';
+// import LightB from "./LightB";
 
 const Projects = () => {
+  	// State
+	const [toggle, setToggle] =  React.useState(false);
+	const [sIndex, setSIndex] =  React.useState(0);
+
+	// Handler
+	const  lightBoxHandler  = (state, sIndex) => {
+		setToggle(state);
+		setSIndex(sIndex);
+	};
   
   return (
     <section name="projects">
@@ -20,7 +32,34 @@ const Projects = () => {
       <div className="container2">
 
         <div className="pictures">
-          <LightB />
+        <div>
+			
+			{data.map((item, index) => (
+			<div >
+				<img className="initial-view"
+					key={item.id}
+					src={item.image}
+					alt={item.title}
+					onClick={() => {
+					lightBoxHandler(true, index);
+					}}
+				/>
+			</div>
+			))}
+			
+			
+			<LightBox
+				state={toggle}
+        event={lightBoxHandler}
+        data={data}
+        imageWidth="60vw"
+        imageHeight="70vh"
+        thumbnailHeight={50}
+        thumbnailWidth={50}
+        setImageIndex={setSIndex}
+        imageIndex={sIndex}
+			/>
+		</div>
         </div>
 
 
